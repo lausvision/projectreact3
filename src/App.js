@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+import axios from 'axios';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+export default class App extends React.Component {
+
+  state={imageURL: ""};
+
+  async componentWillMount(){
+    const res = await axios.get("https://www.rijksmuseum.nl/api/nl/collection?key=TlcG1N0t&involvedMaker=Rembrandt+van+Rijn");
+    this.setState({imageURL: res.data.artObjects[0].webImage.url});
+  }
+
+
+  render() {
+    return (
+      <div>
+        <h1>Hola Rembrandt, jeje</h1>
+
+        <img src={this.state.imageURL} alt="Rembrandt pic"></img>
+      </div>
+    )
+  }
 }
 
-export default App;
