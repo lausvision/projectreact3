@@ -1,7 +1,12 @@
 body {
   background-image: linear-gradient(to right,#272216 , #0c0b0b);
   color:white;
+  padding-left: 20px;
   
+}
+.title{
+  padding-left: 20px;
+  font-size: 100px;
 }
 
 .image{
@@ -18,6 +23,7 @@ body {
 .topnav {
    
   overflow: hidden;
+  float: right;
 }
 
 /* Style the links inside the navigation bar */
@@ -25,9 +31,10 @@ body {
   float: left;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 14px 16px;
+  padding: 34px 46px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
+ 
 }
 
 /* Add a color to the active/current link */
