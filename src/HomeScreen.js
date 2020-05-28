@@ -1,10 +1,23 @@
 import React, {Component} from 'react';
+import hall from './img/hall.jpg';
+
 
 class HomeScreen extends Component{
 
+
+   
+
     render(){
         return(
-            <h1>Hello from the Home Screen</h1>
+           
+            <div class = "Hall">
+                
+               <img class = "imageHall" src={hall} alt="rijsk hall"></img>
+               
+            </div>
+
+                
+            
         )
     }
 }
