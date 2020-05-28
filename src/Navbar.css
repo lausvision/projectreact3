@@ -7,6 +7,7 @@
     width: 300px;
     margin-top: 4px;
     
+    
 }
 
 .bar{
@@ -14,13 +15,14 @@
     margin:4px;
     height: 3px;
     color:pink;
-    background: grey;
+    background: grey;  /*iconita*/
 }
 
 .btn{
-    border: 1px solid rgb(138, 137, 137);
+    border: 2px solid rgb(138, 137, 137);
     display: inline-block;
     cursor:pointer;
+    
 }
 
 .logoBtn{
@@ -28,7 +30,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid black;
+    padding-right: 5px;
 }
 
 ul{
@@ -43,7 +46,8 @@ ul{
 }
 
 ul li a{
-    background: #424242;
+    background: #424242; /*color quan esta reduit*/
+    
     display: block;
     color: #fff;
     padding: 10px;
@@ -56,7 +60,7 @@ ul li a{
 }
 
 ul li a:hover{
-    background: #073df035;
+    background: #000000ce;
     color: orange;
     padding-left: 20px;
     
