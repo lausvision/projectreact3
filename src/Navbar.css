@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+.logo img{
+    width: 300px;
+    margin-top: 4px;
+    
+}
+
+.bar{
+    width: 30px;
+    margin:4px;
+    height: 3px;
+    color:pink;
+    background: grey;
+}
+
+.btn{
+    border: 1px solid rgb(138, 137, 137);
+    display: inline-block;
+    cursor:pointer;
+}
+
+.logoBtn{
+    background: #42424242;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid orange;
+}
+
+ul{
+    list-style: none;
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.showNav{
+    height: 160px;  /*se augmenta si augmentan los numeros de paginas*/
+}
+
+ul li a{
+    background: #424242;
+    display: block;
+    color: #fff;
+    padding: 10px;
+    
+    text-decoration: none;
+    transition: all 1s ease;
+    font-size: 18px;
+   
+
+}
+
+ul li a:hover{
+    background: #073df035;
+    color: orange;
+    padding-left: 20px;
+    
+}
+
+/* responsive mode */
+
+@media screen and (min-width:640px){
+    nav{
+        background: #424242;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        height: auto;
+    }
+
+    .showNav{
+        height: auto;
+    }
+
+    nav ul a{
+        background: transparent;
+    }
+
+    .logoBtn{
+        border:none;
+    }
+
+    ul li a:hover{
+        background: none;
+        color: orange;
+        padding-left: 10px;
+    }
+}

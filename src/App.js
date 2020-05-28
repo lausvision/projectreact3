@@ -1,7 +1,12 @@
 import React from 'react';
 import axios from 'axios';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import './Navbar.css';
 
+import Navbar from './Navbar';
+import HomeScreen from './HomeScreen';
+import SecondScreen from './SecondScreen';
+import ThirdScreen from './ThirdScreen';
 
 
 
@@ -20,22 +25,30 @@ export default class App extends React.Component {
 
   render() {
     return (
-      
-    
-      <div>
+      <Router>
+        <div className="main">
+          <Navbar/>
 
+            <Switch>
+              <Route exact path="/" component={HomeScreen}></Route>
+              <Route exact path="/SecondScreen" component={SecondScreen}></Route>
+              <Route exact path="/ThirdScreen" component={ThirdScreen}></Route>
+            </Switch>
+          
+        </div>
+
+      </Router>
+      
+      /*<div>
       <h1 class="title">RIJKS MUSEUM</h1>
       <div class="topnav">
         <a class="active" href="index.html">Rembrandt van Rijn</a>
-        <br/>
+        
         <a href="quiensoy.html">sdfghjk</a>
       </div>
-        
-        
-        
         <img class = "image" src={this.state.imageURL1} alt="Rembrandt pic"></img>
         <img class = "image" src={this.state.imageURL2} alt="Rembrandt pic2"></img>
-      </div>
+      </div>*/
     )
   }
 }
