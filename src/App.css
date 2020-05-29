@@ -55,17 +55,18 @@ body {
 }
 
 .web{
-  padding-left: 45%;
-  padding-bottom: 20px;
+  position: absolute;
+  bottom: 2%;
+  right: 46%;
+  padding: 10px;
+  background-color: rgb(143, 47, 3);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.vector_web{
-  width: 1;
-  height: 1;
-  max-width: 100px;
-  padding-bottom: 20px;
-
-}
 
 
 /*NAVBAR*/

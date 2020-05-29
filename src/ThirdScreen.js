@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 
 import './App.css';
-import webLogo from './img/web.png';
+
 
 class ThirdScreen extends Component{
 
@@ -37,7 +37,6 @@ class ThirdScreen extends Component{
                 <div class = "place">Placement: {this.state.prodPlace}</div>
                 
                 <a class="web" href={this.state.linktoweb}>Official site 
-                <img class="vector_web" src= {webLogo} alt="logo web"/>
                 </a>
 
             </div>
