@@ -1,6 +1,11 @@
 *{
     padding: 0px;
     margin:0px;
+    
+}
+
+.nav{
+    background-image: linear-gradient(to right,rgba(129, 86, 74, 0.65), #fdf2de8e);
 }
 
 .logo img{
@@ -15,18 +20,18 @@
     margin:4px;
     height: 3px;
     color:pink;
-    background: grey;  /*iconita*/
+    background: rgb(78, 78, 78);  /*iconita*/
 }
 
 .btn{
-    border: 2px solid rgb(138, 137, 137);
+    border: 2px solid rgb(78, 78, 78);
     display: inline-block;
     cursor:pointer;
     
 }
 
 .logoBtn{
-    background: #42424242;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +51,7 @@ ul{
 }
 
 ul li a{
-    background: #424242; /*color quan esta reduit*/
+    background: #1b2f2b73; /*color quan esta reduit*/
     
     display: block;
     color: #fff;
@@ -56,12 +61,13 @@ ul li a{
     transition: all 1s ease;
     font-size: 18px;
    
+   
 
 }
 
 ul li a:hover{
-    background: #000000ce;
-    color: orange;
+    background: #0f0e0ece;
+    color: rgb(168, 106, 78);
     padding-left: 20px;
     
 }
@@ -100,7 +106,7 @@ ul li a:hover{
 
     ul li a:hover{
         background: none;
-        color: orange;
+        color: rgb(143, 47, 3);
         padding-left: 10px;
     }
 }

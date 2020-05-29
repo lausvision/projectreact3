@@ -18,7 +18,7 @@ class Navbar extends Component{
     render(){
         return(
 
-        <nav>
+        <nav className="nav">
         <div className="logoBtn">
             <div className="logo">
                 <Link to='/'>
