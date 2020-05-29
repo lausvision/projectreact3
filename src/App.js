@@ -7,6 +7,7 @@ import Navbar from './Navbar';
 import HomeScreen from './HomeScreen';
 import SecondScreen from './SecondScreen';
 import ThirdScreen from './ThirdScreen';
+import FourthScreen from './FourthScreen';
 
 
 
@@ -33,6 +34,7 @@ export default class App extends React.Component {
               <Route exact path="/" component={HomeScreen}></Route>
               <Route exact path="/SecondScreen" component={SecondScreen}></Route>
               <Route exact path="/ThirdScreen" component={ThirdScreen}></Route>
+              <Route exact path="/FourthScreen" component={FourthScreen}></Route>
             </Switch>
           
         </div>

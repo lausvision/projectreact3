@@ -36,7 +36,7 @@ class Navbar extends Component{
         <ul className={this.state.isOpen ? 'showNav': 'undefined'}>
           <li><Link to='/SecondScreen'>The Night Watch</Link></li>
           <li><Link to='/ThirdScreen'>The Milkmaid</Link></li>
-          <li><Link to='/'>The gardens</Link></li>
+          <li><Link to='/FourthScreen'>The Threatened Swan</Link></li>
           
         </ul>
 
