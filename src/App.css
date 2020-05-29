@@ -4,13 +4,6 @@ body {
   
 }
 
-
-.image{
-  max-width: 700px;
-  max-height: 700px;
-  padding-left: 150px;
-}
-
 .imageHall{
   width: 100%;
   height: 100%;
@@ -33,6 +26,14 @@ body {
   right: 50px;
   font-size: 30px;
   font-weight: 100;
+}
+
+/*Second Screen*/
+
+.image{
+  max-width: 700px;
+  max-height: 700px;
+  padding-left: 150px;
 }
 
 
