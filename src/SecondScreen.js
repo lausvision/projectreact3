@@ -7,19 +7,19 @@ import webLogo from './img/web.png';
 class SecondScreen extends Component{
 
 
-    state={imageURL1: ""};
-    state={maker1: ""};
-    state={title1: ""};
-    state={prodPlace1: ""};
-    state={linktoweb1: ""};
+    state={imageURL: ""};
+    state={maker: ""};
+    state={title: ""};
+    state={prodPlace: ""};
+    state={linktoweb: ""};
   
     async componentWillMount(){
       const res = await axios.get("https://www.rijksmuseum.nl/api/nl/collection?key=TlcG1N0t&involvedMaker=Rembrandt+van+Rijn");
-      this.setState({imageURL1: res.data.artObjects[0].webImage.url});
-      this.setState({maker1: res.data.artObjects[0].principalOrFirstMaker});
-      this.setState({title1: res.data.artObjects[0].title});
-      this.setState({prodPlace1: res.data.artObjects[0].productionPlaces});
-      this.setState({linktoweb1: res.data.artObjects[0].web});
+      this.setState({imageURL: res.data.artObjects[0].webImage.url});
+      this.setState({maker: res.data.artObjects[0].principalOrFirstMaker});
+      this.setState({title: res.data.artObjects[0].title});
+      this.setState({prodPlace: res.data.artObjects[0].productionPlaces});
+      this.setState({linktoweb: res.data.artObjects[0].web});
       console.log(res.data);
     }
 
@@ -27,14 +27,14 @@ class SecondScreen extends Component{
         return(
             <div>
                 
-                <img class = "image" src={this.state.imageURL1} alt="Rembrandt pic"></img>
-                <h1>{this.state.title1}</h1>
-                <div>{this.state.maker1}</div>
-                <div>{this.state.prodPlace1}</div>
+                <img class = "image" src={this.state.imageURL} alt="Rembrandt pic"></img>
+                <h1 class = "title">{this.state.title}</h1>
+                <div class = "author">Author: {this.state.maker}</div>
+                <div class = "place">Placement: {this.state.prodPlace}</div>
                 <div>{this.state.linktoweb1}bkj</div>
                 
-                <a class="vector_web" href="https://github.com/lausvision">
-                <img class="vector_web" src= {webLogo} alt="logo web" />
+                <a class="web" href="https://github.com/lausvision">Official site 
+                <img class="vector_web" src= {webLogo} alt="logo web"/>
                 </a>
 
             </div>

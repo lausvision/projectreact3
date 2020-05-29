@@ -33,9 +33,39 @@ body {
 .image{
   max-width: 700px;
   max-height: 700px;
-  padding-left: 150px;
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
 }
 
+.title{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.author{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.place{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.web{
+  padding-left: 45%;
+  padding-bottom: 20px;
+}
+
+.vector_web{
+  width: 1;
+  height: 1;
+  max-width: 100px;
+  padding-bottom: 20px;
+
+}
 
 
 /*NAVBAR*/
