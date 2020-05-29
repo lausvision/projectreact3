@@ -30,7 +30,7 @@ class FourthScreen extends Component{
                 <img class = "image" src={this.state.imageURL} alt="Rembrandt pic"></img>
                 <h1 class = "title">{this.state.title}</h1>
                 <div class = "author">Author: {this.state.maker}</div>
-                <div class = "place">Placement: {this.state.prodPlace}</div>
+                <div class = "place">Placement:{this.state.prodPlace}</div>
                 <div>{this.state.linktoweb1}bkj</div>
                 
                 <a class="web" href="https://github.com/lausvision">Official site 
