@@ -19,7 +19,7 @@ class SecondScreen extends Component{
       this.setState({maker: res.data.artObjects[0].principalOrFirstMaker});
       this.setState({title: res.data.artObjects[0].title});
       this.setState({prodPlace: res.data.artObjects[0].productionPlaces});
-      this.setState({linktoweb: res.data.artObjects[0].web});
+      this.setState({linktoweb: res.data.artObjects[0].links.web});
       console.log(res.data);
     }
 
@@ -31,9 +31,8 @@ class SecondScreen extends Component{
                 <h1 class = "title">{this.state.title}</h1>
                 <div class = "author">Author: {this.state.maker}</div>
                 <div class = "place">Placement: {this.state.prodPlace}</div>
-                <div>{this.state.linktoweb}bkj</div>
                 
-                <a class="web" href="https://github.com/lausvision">Official site 
+                <a class="web" href={this.state.linktoweb}>Official site 
                 <img class="vector_web" src= {webLogo} alt="logo web"/>
                 </a>
 
