@@ -31,7 +31,7 @@ class SecondScreen extends Component{
                 <h1 class = "title">{this.state.title}</h1>
                 <div class = "author">Author: {this.state.maker}</div>
                 <div class = "place">Placement: {this.state.prodPlace}</div>
-                <div>{this.state.linktoweb1}bkj</div>
+                <div>{this.state.linktoweb}bkj</div>
                 
                 <a class="web" href="https://github.com/lausvision">Official site 
                 <img class="vector_web" src= {webLogo} alt="logo web"/>
