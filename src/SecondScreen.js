@@ -15,16 +15,16 @@ class SecondScreen extends Component{
   
     async componentWillMount(){
         const res = await axios.get("https://www.rijksmuseum.nl/api/nl/collection?key=TlcG1N0t&toppieces=true");
-        this.setState({imageURL: res.data.artObjects[3].webImage.url});
-        this.setState({maker: res.data.artObjects[3].principalOrFirstMaker});
-        this.setState({title: res.data.artObjects[3].title});
-        this.setState({prodPlace: res.data.artObjects[3].productionPlaces[1]});
-        this.setState({linktoweb: res.data.artObjects[3].links.web});
+        this.setState({imageURL: res.data.artObjects[0].webImage.url});
+        this.setState({maker: res.data.artObjects[0].principalOrFirstMaker});
+        this.setState({title: res.data.artObjects[0].title});
+        this.setState({prodPlace: res.data.artObjects[0].productionPlaces[0]});
+        this.setState({linktoweb: res.data.artObjects[0].links.web});
         console.log(res.data);
   
-        if(this.prodPlace===[null]){
-          this.setState({prodPlace: 'unknown'});
-        }
+        if(this.prodPlace===undefined){
+            this.setState({prodPlace: "undefined"});
+          }
       }
 
     render(){

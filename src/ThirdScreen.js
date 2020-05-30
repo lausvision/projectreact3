@@ -18,12 +18,13 @@ class ThirdScreen extends Component{
       this.setState({imageURL: res.data.artObjects[9].webImage.url});
       this.setState({maker: res.data.artObjects[9].principalOrFirstMaker});
       this.setState({title: res.data.artObjects[9].title});
-      this.setState({prodPlace: res.data.artObjects[9].productionPlaces[1]});
+      this.setState({prodPlace: res.data.artObjects[9].productionPlaces[0]});
       this.setState({linktoweb: res.data.artObjects[9].links.web});
       console.log(res.data);
-
-      if(this.prodPlace===[null]){
-        this.setState({prodPlace: 'unknown'});
+      console.log(this.prodPlace);
+     
+      if(this.prodPlace===undefined){
+        this.setState({prodPlace: "undefined"});
       }
     }
 

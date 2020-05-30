@@ -21,6 +21,10 @@ class FourthScreen extends Component{
       this.setState({prodPlace: res.data.artObjects[2].productionPlaces});
       this.setState({linktoweb: res.data.artObjects[2].links.web});
       console.log(res.data);
+
+      if(this.prodPlace===undefined){
+        this.setState({prodPlace: "undefined"});
+      }
     }
 
     render(){
@@ -30,7 +34,7 @@ class FourthScreen extends Component{
                 <img class = "image" src={this.state.imageURL} alt="Rembrandt pic"></img>
                 <h1 class = "title">{this.state.title}</h1>
                 <div class = "author">Author: {this.state.maker}</div>
-                <div class = "place">Placement:{this.state.prodPlace}</div>
+                <div class = "place">Placement: {this.state.prodPlace}</div>
 
                 
                 <a class="web" href={this.state.linktoweb}>Official site</a>
