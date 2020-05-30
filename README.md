@@ -1,4 +1,20 @@
+# React App using the Rijks Museum API
+
+Practicing API use with the API of the Rijks Museum. Thanks Rijks Museum!!
+
+[Rijks API](https://data.rijksmuseum.nl/object-metadata/api/)
+
+
+## Builded with 🛠️
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+## Author ✒️
+Laura Molina
+
+## Access web: [WEB APP](https://lausvision.github.io/projectreact3/)
+
+
 
 ## Available Scripts
 
