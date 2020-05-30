@@ -37,7 +37,7 @@ class Navbar extends Component{
           <li><Link to='/SecondScreen'>Highlight1</Link></li>
           <li><Link to='/ThirdScreen'>Highlight2</Link></li>
           <li><Link to='/FourthScreen'>Highlight3</Link></li>
-          
+          <li><Link to='/FifthScreen'>Highlight4</Link></li>
         </ul>
 
         </nav>

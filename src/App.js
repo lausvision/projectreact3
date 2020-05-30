@@ -8,7 +8,7 @@ import HomeScreen from './HomeScreen';
 import SecondScreen from './SecondScreen';
 import ThirdScreen from './ThirdScreen';
 import FourthScreen from './FourthScreen';
-
+import FifthScreen from './FifthScreen';
 
 
 export default class App extends React.Component {
@@ -35,6 +35,7 @@ export default class App extends React.Component {
               <Route exact path="/SecondScreen" component={SecondScreen}></Route>
               <Route exact path="/ThirdScreen" component={ThirdScreen}></Route>
               <Route exact path="/FourthScreen" component={FourthScreen}></Route>
+              <Route exact path="/FifthScreen" component={FifthScreen}></Route>
             </Switch>
           
         </div>
