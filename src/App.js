@@ -42,16 +42,6 @@ export default class App extends React.Component {
 
       </Router>
       
-      /*<div>
-      <h1 class="title">RIJKS MUSEUM</h1>
-      <div class="topnav">
-        <a class="active" href="index.html">Rembrandt van Rijn</a>
-        
-        <a href="quiensoy.html">sdfghjk</a>
-      </div>
-        <img class = "image" src={this.state.imageURL1} alt="Rembrandt pic"></img>
-        <img class = "image" src={this.state.imageURL2} alt="Rembrandt pic2"></img>
-      </div>*/
     )
   }
 }
