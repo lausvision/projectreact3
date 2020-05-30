@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/projectreact3/static/css/main.cf2ce9dc.chunk.css",
+    "main.js": "/projectreact3/static/js/main.ae04055e.chunk.js",
+    "main.js.map": "/projectreact3/static/js/main.ae04055e.chunk.js.map",
+    "runtime-main.js": "/projectreact3/static/js/runtime-main.61db9880.js",
+    "runtime-main.js.map": "/projectreact3/static/js/runtime-main.61db9880.js.map",
+    "static/js/2.1838a4f3.chunk.js": "/projectreact3/static/js/2.1838a4f3.chunk.js",
+    "static/js/2.1838a4f3.chunk.js.map": "/projectreact3/static/js/2.1838a4f3.chunk.js.map",
+    "index.html": "/projectreact3/index.html",
+    "precache-manifest.11a707921eb02c62eb20677bf96d16e0.js": "/projectreact3/precache-manifest.11a707921eb02c62eb20677bf96d16e0.js",
+    "service-worker.js": "/projectreact3/service-worker.js",
+    "static/css/main.cf2ce9dc.chunk.css.map": "/projectreact3/static/css/main.cf2ce9dc.chunk.css.map",
+    "static/js/2.1838a4f3.chunk.js.LICENSE.txt": "/projectreact3/static/js/2.1838a4f3.chunk.js.LICENSE.txt",
+    "static/media/hall.jpg": "/projectreact3/static/media/hall.c8db90bd.jpg",
+    "static/media/logo.png": "/projectreact3/static/media/logo.c3de2c6f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.61db9880.js",
+    "static/js/2.1838a4f3.chunk.js",
+    "static/css/main.cf2ce9dc.chunk.css",
+    "static/js/main.ae04055e.chunk.js"
+  ]
+}
